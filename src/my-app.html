@@ -1,0 +1,10 @@
+<import from="./name-tag"></import>
+
+<div class="message">${message}</div> <!-- Expecting intelisense on message -->
+<p>My name is ${myName}</p><!-- Expecting intelisense on myName -->
+
+<p repeat.for="num of numbers"><!-- Getting intelisense on repeat.for, expecting intelisense on numbers -->
+    ${num}
+</p>
+
+<name-tag name.bind="myName" home-town.bind="'Indianapolis'"></name-tag><!-- expecting intelisense on name, hometown, myName -->
